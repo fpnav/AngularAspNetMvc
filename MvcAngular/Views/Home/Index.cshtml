@@ -1,0 +1,23 @@
+﻿<h3>Principal</h3>
+<hr />
+<div ng-controller="produtosCtrl">
+    <table class="table table-striped">
+
+        <tr ng-repeat="produto in produtos">
+            <td> {{produto.ProdutoNome}} </td>
+            <td class="text-right"> {{produto.ProdutoPreco | currency }} </td>
+            <td class="text-right">
+                <button class="btn btn-danger"
+                        ng-click="DeletaProduto(produto)"
+                        data-toggle="tooltip"
+                        title="Clique para Deletar Produto">
+                    X
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <th>Nome do Produto &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Preço do Produto</th>
+        </tr>
+
+    </table>
+</div>

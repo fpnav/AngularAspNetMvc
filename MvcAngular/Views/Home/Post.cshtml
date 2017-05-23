@@ -1,0 +1,11 @@
+﻿
+
+<input type="text" required ng-model="produto.ProdutoNome" />
+<input type="text" required ng-model="produto.ProdutoPreco" />
+
+<a href="#" class="btn btn-primary" ng-click="AddProduto(produto)"
+    ng-disabled="!produto.ProdutoNome || !produto.ProdutoPreco"
+    data-toggle="tooltip"
+    title="Adicionar Produto">
+    Adicionar Produto</a>
+
